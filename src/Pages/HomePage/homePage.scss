@@ -1,0 +1,117 @@
+@import "../../App.scss";
+
+section {
+  background-image: url("./Images/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: $maxWidthContainer;
+    margin-top: 200px;
+
+  }
+  .up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & h1 {
+    font-family: Inter;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 61px;
+    background: var(
+      --gradients-title,
+      linear-gradient(138deg, #fff 0%, rgba(176, 250, 255, 0) 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  & p {
+    color: #fff;
+    font-family: Hauora;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    opacity: 0.800000011920929;
+  }
+  .swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 150px;
+    margin-bottom: 46px;
+
+    & .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 50px;
+      padding: 0px 30px;
+      height: 100%;
+      border-radius: 8px;
+      border-radius: 8px;
+      background: var(--dark-input, #151822);
+      & .text {
+        color: #fff;
+        & span {
+          font-family: Hauora;
+          font-size: 16px;
+          line-height: 32px;
+          font-weight: 400;
+        }
+        & p {
+          font-family: Inter;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 109.1%;
+          opacity: 1;
+        }
+        .description {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 0%;
+        }
+      }
+      & button {
+        color: #fff;
+        border-radius: 12px;
+        background: var(--accent, #1d9a6d);
+        box-shadow: 0px 8px 16px 0px rgba(75, 72, 241, 0.19);
+        padding: 16px 32px;
+        gap: 10px;
+        cursor: pointer;
+      }
+    }
+    .ufo {
+      background-image: url("./Images/ufo.png");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: contain;
+    }
+
+    .gear {
+      background-image: url("./Images/gear.png");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: contain;
+    }
+    .planet {
+      background-image: url("./Images/planet.png");
+      background-repeat: no-repeat;
+      background-position: bottom right ;
+      background-size: contain;
+    }
+  }
+  .swiper-slide {
+    width: 38%;
+    height: 470px;
+  }
+}

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Hauora;
+  src: url(fonts/web/Hauora-Light.woff2) format("woff2"),
+    url(fonts/web/Hauora-Light.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Hauora;
+  src: url(fonts/web/Hauora-Bold.woff2) format("woff2"),
+    url(fonts/web/Hauora-Bold.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Hauora;
+  src: url(fonts/web/Hauora-ExtraBold.woff2) format("woff2"),
+    url(fonts/web/Hauora-ExtraBold.woff) format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: Hauora;
+  src: url(fonts/web/Hauora-SemiBold.woff2) format("woff2"),
+    url(fonts/web/Hauora-SemiBold.woff) format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Hauora;
+  src: url(fonts/web/Hauora-Regular.woff2) format("woff2"),
+    url(fonts/web/Hauora-Regular.woff) format("woff");
+  font-weight: 400;
+}
+
+$minWidth: 320px;
+$maxWidth: 1440px;
+$maxWidthContainer: 1440px - 165px * 2;
+$fontFamily: Hauora;
+
+body {
+  margin: 0;
+  font-family: Hauora;
+  
+}
+
