@@ -1,6 +1,6 @@
 @import "../../App.scss";
 
-section {
+.section_1 {
   background-image: url("./Images/back.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -12,13 +12,12 @@ section {
     display: flex;
     flex-direction: column;
     width: $maxWidthContainer;
-    margin-top: 200px;
-
   }
-  .up {
+  & .up {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 200px;
   }
   & h1 {
     font-family: Inter;

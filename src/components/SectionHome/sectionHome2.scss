@@ -1,0 +1,134 @@
+@import "../../App.scss";
+
+.section_2 {
+  background: #0c111b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .container {
+    display: flex;
+    width: $maxWidthContainer;
+    color: #fff;
+    gap: 56px;
+    margin-top: 100px;
+    justify-content: space-between;
+    gap: 56px;
+    margin-bottom: 20px;
+
+    & .left {
+      display: flex;
+      flex-direction: column;
+      gap: 46px;
+    }
+
+    & .up {
+      display: flex;
+      flex-direction: column;
+    }
+    & h2 {
+      font-family: Inter;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 43px;
+      background: var(
+        --gradients-title,
+        linear-gradient(138deg, #fff 0%, rgba(176, 250, 255, 0) 100%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    & p {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 32px;
+      opacity: 0.800000011920929;
+    }
+    .swipe__container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .swipe__container__btn {
+      display: flex;
+      flex-direction: column;
+    }
+    .swipe__btn {
+      display: inline-flex;
+      padding: 6px 21px 6px 22px;
+      border-radius: 37px;
+      border: none;
+      background: #1a204a;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    & .right__container_icons {
+      position: relative;
+      width: 50%;
+      .google {
+        position: absolute;
+
+        left: 40%;
+      }
+      .yahoo {
+        position: absolute;
+        top: 10%;
+        right: 15%;
+      }
+      .group {
+        position: absolute;
+        left: 80%;
+        top: 30%;
+      }
+      .wecar {
+        position: absolute;
+        left: 10%;
+        top: 20%;
+      }
+      .xwc {
+        position: absolute;
+        left: 0;
+        top: 50%;
+      }
+      .nasdaq {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+      }
+      .yandex {
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+      }
+      .ods {
+        position: absolute;
+        left: 20%;
+        bottom: 10%;
+      }
+      .ambev {
+        position: absolute;
+        left: 70%;
+        bottom: 20%;
+      }
+      .vector {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        .rectangle {
+          position: absolute;
+          border-radius: 100%;
+          width: 15px;
+          height: 15px;
+          left: 10%;
+          top: 60%
+        }
+        .ellipse {
+            position: absolute;
+            left: 8.5%;
+          top: -1%
+        }
+      }
+    }
+  }
+}
